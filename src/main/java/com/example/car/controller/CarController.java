@@ -18,6 +18,13 @@ public class CarController {
         this.service = service;
     }
 
+    //http://localhost:8080/api/cars/cars
+    @GetMapping("/cars")
+    public String getCar()
+    {
+        System.out.println("getting car");
+        return "Car";
+    }
     @GetMapping
     public List<Car> getAllCars()
     {
