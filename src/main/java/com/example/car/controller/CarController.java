@@ -31,7 +31,7 @@ public class CarController {
         return service.getAllCars();
     }
 
-    @PostMapping("/carsbypostmethod")
+    @PostMapping("/getCarsByPostMethod")
     public List<Car> getCars()
     {
         return service.getAllCars();
