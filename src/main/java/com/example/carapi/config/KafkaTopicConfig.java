@@ -1,4 +1,4 @@
-package com.example.car.config;
+package com.example.carapi.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

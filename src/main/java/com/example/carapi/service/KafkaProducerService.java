@@ -1,4 +1,4 @@
-package com.example.car.service;
+package com.example.carapi.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

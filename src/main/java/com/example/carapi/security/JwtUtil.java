@@ -1,4 +1,4 @@
-package com.example.car.security;
+package com.example.carapi.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

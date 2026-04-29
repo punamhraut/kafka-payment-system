@@ -1,6 +1,4 @@
-package com.example.car.dto;
-
-import lombok.Data;
+package com.example.carapi.dto;
 
 
 public class AuthRequest {

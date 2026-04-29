@@ -1,4 +1,4 @@
-package com.example.car.exception;
+package com.example.carapi.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

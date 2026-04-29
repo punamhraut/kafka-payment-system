@@ -1,4 +1,4 @@
-package com.example.car.security;
+package com.example.carapi.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

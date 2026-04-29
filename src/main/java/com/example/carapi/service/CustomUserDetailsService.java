@@ -1,4 +1,4 @@
-package com.example.car.service;
+package com.example.carapi.service;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

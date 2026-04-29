@@ -1,4 +1,4 @@
-package com.example.car.exception;
+package com.example.carapi.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

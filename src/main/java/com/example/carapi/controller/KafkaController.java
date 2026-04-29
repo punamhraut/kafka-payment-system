@@ -1,6 +1,6 @@
-package com.example.car.controller;
+package com.example.carapi.controller;
 
-import com.example.car.service.KafkaProducerService;
+import com.example.carapi.service.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

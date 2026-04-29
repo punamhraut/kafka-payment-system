@@ -1,7 +1,7 @@
-package com.example.car.controller;
+package com.example.carapi.controller;
 
-import com.example.car.dto.AuthRequest;
-import com.example.car.security.JwtUtil;
+import com.example.carapi.dto.AuthRequest;
+import com.example.carapi.security.JwtUtil;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.PostMapping;
