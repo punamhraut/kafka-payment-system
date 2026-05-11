@@ -1,81 +1,54 @@
-# springboot-kafka-secure-api
-Secure Spring Boot REST API with Kafka integration and JWT-based authentication (Spring Security)
+# Kafka Banking Event-Driven Demo
 
-# Car CRUD Demo - Spring Boot Project
+This project demonstrates a simple event-driven banking transaction flow using Spring Boot and Apache Kafka.
 
-This is a Spring Boot backend project for managing car details using REST APIs. It includes CRUD operations, Spring Security, and is a base for microservices and Kafka integration.
+The application publishes payment events to a Kafka topic, and multiple backend services consume the same event independently for different processing tasks.
 
-## Features
+## Architecture Diagram
+![Kafka Architecture](images/kafka-architecture.png)
 
-- Create, Read, Update, Delete (CRUD) operations for Car
-- REST APIs using Spring Boot
-- Spring Security (Basic Authentication)
-- Maven project structure
-- Ready for microservices expansion
-- Kafka integration ready (future scope)
-
-## Tech Stack
-
-- Java 17+
+## Technologies Used
+- Java 8
 - Spring Boot
-- Spring Web
-- Spring Data JPA
-- Spring Security
+- Apache Kafka
+- REST API
 - Maven
-- H2 / MySQL (based on configuration)
 
-## Spring Security
+## Event Flow
+Payment Service → Kafka Topic (payment-success)
 
-This project uses Spring Security with in-memory authentication.
+Multiple consumers process the same event independently:
+- Fraud Detection Service
+- Notification Service
+- Audit Service
+- Analytics Service
 
-### Default Login
-Username: punam  
-Password: 1234
 
-## How to Run
+## Why Kafka?
+Kafka enables asynchronous communication between services and helps improve:
+- Scalability
+- Decoupling
+- Reliability
+- Fault tolerance
+- Real-time event processing
 
-### Clone repository
-git clone https://github.com/punamhraut/springboot-kafka-secure-api.git
+## API Endpoint
+POST /payments/process
 
-### Run project
-mvn spring-boot:run
+### Request Body
+```json
+{
+  "transactionId": "TXN101",
+  "customerName": "Punam",
+  "amount": 5000
+}
+```
 
-## API Endpoints
+## Run Steps
+1. Start Kafka Server
+2. Run Spring Boot Application
+3. Trigger API using Postman
+4. Verify producer and consumer logs in console
 
-### Public API
-GET /public/hello
+Kafka server was started locally using Windows Kafka setup.
 
-### Secured APIs
-GET    /api/cars  
-POST   /api/cars  
-PUT    /api/cars/{id}  
-DELETE /api/cars/{id}
-
-## Authentication
-
-All secured APIs require Basic Authentication.
-
-Username: punam  
-Password: 1234
-
-## Project Structure
-
-src/main/java  
-├── controller  
-├── service  
-├── repository  
-├── entity  
-└── config (SecurityConfig)
-
-## Future Enhancements
-
-- JWT Authentication
-- Role-based access (ADMIN / USER)
-- Kafka Producer & Consumer integration
-- Spring Cloud (Eureka, Gateway)
-- Docker deployment
-
-## Author
-
-Punam Raut  
-Java Backend Developer | Spring Boot | Microservices | Kafka Learner
