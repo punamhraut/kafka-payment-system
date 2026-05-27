@@ -62,6 +62,7 @@ Spring Boot App
 
 ✔ One command setup for full system: docker-compose up
 
+
 ## Development Setup
 Environment Setup:
 Installed WSL2 on Windows
@@ -69,10 +70,12 @@ Configured Ubuntu Linux environment
 Installed Docker Desktop
 Verified Docker CLI integration
 
+
 ## API Testing
 Used Postman to test REST APIs
 Payment request triggers Kafka event
 Verified event publishing in Kafka topic
+
 
 ## Key Features
 ✔ Payment processing API
@@ -80,6 +83,7 @@ Verified event publishing in Kafka topic
 ✔ Asynchronous communication
 ✔ Fully containerized system
 ✔ Multi-service orchestration using Docker Compose
+
 
 ## Issues Faced & Fixes
 Docker Image Pull Issue
@@ -94,6 +98,7 @@ Restarted Docker Desktop
 Fixed internet/DNS resolution
 Successfully pulled base images
 
+
 ## Final Outcome
 ✔ Kafka running successfully
 ✔ Zookeeper running
@@ -102,8 +107,10 @@ Successfully pulled base images
 ✔ End-to-end payment flow implemented
 ✔ Event-driven architecture achieved
 
+
 ## API Endpoint
 POST /payments/process
+
 
 ### Request Body
 ```json
@@ -113,6 +120,7 @@ POST /payments/process
   "amount": 5000
 }
 ```
+
 
 ## Run Steps
 1. Clone the Repository
