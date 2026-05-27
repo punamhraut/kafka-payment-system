@@ -50,62 +50,62 @@ Docker solves this by packaging everything together inside a container
 
 ## Docker Setup
 1️⃣ Dockerfile (Spring Boot App)
-Created Dockerfile for containerizing Spring Boot application
-Built JAR using Maven
-Used OpenJDK base image
+- Created Dockerfile for containerizing Spring Boot application
+- Built JAR using Maven
+- Used OpenJDK base image
 
 2️⃣ Docker Compose Setup
-Configured multi-container setup:
-Kafka
-Zookeeper
-Spring Boot App
+- Configured multi-container setup:
+- Kafka
+- Zookeeper
+- Spring Boot App
 
-✔ One command setup for full system: docker-compose up
+- One command setup for full system: docker-compose up
 
 
 ## Development Setup
-Environment Setup:
-Installed WSL2 on Windows
-Configured Ubuntu Linux environment
-Installed Docker Desktop
-Verified Docker CLI integration
+- Environment Setup:
+- Installed WSL2 on Windows
+- Configured Ubuntu Linux environment
+- Installed Docker Desktop
+- Verified Docker CLI integration
 
 
 ## API Testing
-Used Postman to test REST APIs
-Payment request triggers Kafka event
-Verified event publishing in Kafka topic
+- Used Postman to test REST APIs
+- Payment request triggers Kafka event
+- Verified event publishing in Kafka topic
 
 
 ## Key Features
-✔ Payment processing API
-✔ Kafka event publishing
-✔ Asynchronous communication
-✔ Fully containerized system
-✔ Multi-service orchestration using Docker Compose
+- Payment processing API
+- Kafka event publishing
+- Asynchronous communication
+- Fully containerized system
+- Multi-service orchestration using Docker Compose
 
 
 ## Issues Faced & Fixes
-Docker Image Pull Issue
-Error:
-failed to fetch oauth token
-lookup auth.docker.io: no such host
-✔ Root Cause:
-Network/DNS issue
-Docker Hub connectivity failure
-✔ Fix:
-Restarted Docker Desktop
-Fixed internet/DNS resolution
-Successfully pulled base images
+- Docker Image Pull Issue
+- Error:
+- failed to fetch oauth token
+- lookup auth.docker.io: no such host
+- Root Cause:
+- Network/DNS issue
+- Docker Hub connectivity failure
+- Fix:
+- Restarted Docker Desktop
+- Fixed internet/DNS resolution
+- Successfully pulled base images
 
 
 ## Final Outcome
-✔ Kafka running successfully
-✔ Zookeeper running
-✔ Spring Boot app containerized
-✔ Docker Compose working
-✔ End-to-end payment flow implemented
-✔ Event-driven architecture achieved
+- Kafka running successfully
+- Zookeeper running
+- Spring Boot app containerized
+- Docker Compose working
+- End-to-end payment flow implemented
+- Event-driven architecture achieved
 
 
 ## API Endpoint
